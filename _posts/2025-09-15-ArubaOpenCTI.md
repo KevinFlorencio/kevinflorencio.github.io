@@ -1,3 +1,10 @@
+---
+title: "OpenCTI Aruba TI"
+date: 2025-09-15
+categories: [CTI]
+tags: [CTI,Aruba,Home-Lab,Projects]
+---
+
 **Why This Initiative**  
 Currently, there is no centralized or dedicated source on Facebook or other social media platforms that provides real-time updates on cybersecurity threats specific to Aruba. When local companies experience security breaches, the public and their clients are often not notified.
 
