@@ -3,6 +3,7 @@ title: "OpenCTI Aruba TI"
 date: 2025-09-15
 categories: [CTI]
 tags: [CTI,Aruba,Home-Lab,Projects]
+image: "/assets/0_S1KTg8VcrzXtOSH9.jpg"
 ---
 
 **Why This Initiative**  
