@@ -76,7 +76,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/assets/hacker-fictional-hacking-system-9qw4il2t46qcf0rx.jpg"
+avatar: ""
 
  # optional, add your avatar image here
 
