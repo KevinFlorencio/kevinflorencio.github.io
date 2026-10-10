@@ -27,14 +27,12 @@ url: "https://kevinflorencio.github.io"
 github:
   username: KevinFlorencio # your GitHub username
 
-linkedin:
-  username: https://linkedin.com/in/kevinflorencio
-
 social:
   name: Kevin Florencio
-  email: kevinflorencio210304@example.com # replace with your email
+  email: kevinflorencio210304@gmail.com
   links:
     - https://github.com/KevinFlorencio
+    - https://linkedin.com/in/kevinflorencio
 
 # Site Verification Settings
 webmaster_verifications:
@@ -76,9 +74,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: ""
-
- # optional, add your avatar image here
+avatar: "https://github.com/KevinFlorencio.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 social_preview_image:
