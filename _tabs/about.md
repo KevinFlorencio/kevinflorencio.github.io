@@ -6,7 +6,7 @@ order: 4
 
 # About Me
 
-Hi! 👋 My name is Kevin Florencio, and I’m currently a student pursuing my **HBO** degree at **Fontys University of Applied Sciences**.  
+Hi! 👋 My name is Kevin Florencio, and I’m currently a student pursuing my **HBO** degree.
 
 I created this website to document my learning journey, share my projects, and track my progress as I explore the exciting world of **cybersecurity** 🔐.
 
