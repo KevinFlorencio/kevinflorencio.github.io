@@ -12,8 +12,9 @@ built one.
 
 ![Band plan of Aruba from 24 MHz to 1.7 GHz](/assets/img/aruba-rf-bandplan.png)
 
-**The guide is live at
-[thankful-forest-023e9360f.5.azurestaticapps.net](https://thankful-forest-023e9360f.5.azurestaticapps.net/).**
+**The guide is built, but not published.** I took the site offline while the frequency
+catalogue is being verified: the code, the raw scans and the experiment notes live in a
+private repository for now.
 
 ## What it is
 
@@ -26,13 +27,13 @@ A legal, reproducible RTL-SDR field guide for Aruba:
   floor, finds peaks and matches them against the catalogue. Each run produces a Markdown
   report, `peaks.csv`, JSON metadata and two figures.
 - **An audio capture command** for `rtl_fm` with AM/NFM/WFM/USB/LSB and metadata.
-- **Ten legal experiments** — from reading RDS on the FM dial to capturing a NOAA APT pass
-  and attempting the 1420 MHz hydrogen line.
+- **Experiment notes** on RDS, a NOAA APT capture and a 1420 MHz hydrogen-line attempt —
+  held back from the public build until they are checked against the local spectrum.
 - **A blog and reference section** with the Aruban legal notes and the full source list.
 
 The whole thing is a private GitHub repository with CI, a strict docs build and a deploy
-workflow to Azure Static Web Apps. The guide is public; the code and raw scans stay
-private while the catalogue is being verified.
+workflow that is deliberately disabled. Nothing is published while the catalogue is being
+verified; when it is, the guide goes up as a static site.
 
 ## The legal line
 
@@ -76,12 +77,12 @@ the report.
 
 ## What is next
 
-The first real survey from Oranjestad: FM dial, airband, marine and 1090 MHz, captured with
-the same antenna and gain, with the raw CSV committed next to the report. Then the same
-from San Nicolas, and a comparison.
+The first real survey is done: the FM dial from Oranjestad, 87.5–108 MHz, twelve sweeps at a
+fixed 40.2 dB gain. Fourteen of the twenty strongest carriers matched catalogue entries —
+Massive FM 103.5, Caliente 90.7 and Fresh FM 104.3 among them — and the unmatched ones are
+the interesting part. Airband, marine and 1090 MHz are next, then the same run from San
+Nicolas for comparison.
 
-If you are in Aruba and you have an SDR, the most useful thing you can do is tune to a
-frequency in the guide and tell me what you actually hear. The island is the source of
-truth.
-
-**[Read the guide →](https://thankful-forest-023e9360f.5.azurestaticapps.net/)**
+If you are in Aruba, have an SDR and want to help check the catalogue, get in touch. A local
+observation is worth more than another web source, and the frequency table goes public once
+it survives that check.
