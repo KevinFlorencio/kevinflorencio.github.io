@@ -69,7 +69,7 @@ named private vessels or aircraft. The public services are interesting enough.
 
 <figure class="post-float">
   <img src="/assets/img/aruba-rf-fm-waterfall.png" alt="Waterfall of the FM broadcast band in Oranjestad: bright vertical lines are station carriers" class="img-fluid rounded">
-  <figcaption>Twelve sweeps of the FM band from Oranjestad. Each bright vertical line is a carrier that did not move.</figcaption>
+  <figcaption>FM band, 87.5–108 MHz: frequency across, sweeps down. Each bright vertical line is a carrier that stayed put.</figcaption>
 </figure>
 
 `rtl_power` writes a matrix of sweeps × frequency bins. The naive approach — median across
