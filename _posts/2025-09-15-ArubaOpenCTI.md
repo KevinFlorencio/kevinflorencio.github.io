@@ -1,5 +1,5 @@
 ---
-title: "OpenCTI Aruba TI: a live threat radar for the Dutch Caribbean"
+title: "OpenCTI Aruba TI: a live threat radar for the ABC islands"
 date: 2025-09-15
 last_modified_at: 2026-11-05 21:30:00 -0400
 categories: [CTI]
@@ -9,7 +9,7 @@ image:
   alt: Aruba Threat Radar dashboard with OpenCTI counts and a Caribbean incident map
 ---
 
-**Update — 5 November 2026.** This started as a project note. It is now a running platform: OpenCTI and MISP on Proxmox, a public radar, a weekly brief and a reproducible repository. The original reasoning is below, followed by what was actually built, what it sees, and what is still missing.
+**Update — 5 November 2026.** This started as a project note. It is now a running platform: OpenCTI and MISP on Proxmox, a public radar, a weekly brief and a reproducible repository. The current scope is Aruba, Bonaire and Curaçao; Sint Maarten coverage is paused. The original reasoning is below, followed by what was actually built, what it sees, and what is still missing.
 
 ## Why this initiative
 
