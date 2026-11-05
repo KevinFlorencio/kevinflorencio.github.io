@@ -75,12 +75,25 @@ The platform keeps the rest: connector metadata, sensitive reports, internal not
 4. **Zero counts are honest.** Malware and threat-actor objects are still at zero because most public feed events do not carry the galaxies or object templates that would create them. The next coverage job is enabling MISP galaxies and object templates, not inflating the dashboard.
 5. **The publication layer is the differentiator.** OpenCTI alone is a hobby. A radar that a local journalist, a school IT lead or a hotel manager can open, understand and act on is the actual product.
 
+## What changed since publication
+
+The first version of this post ended with a list. Most of it is now running:
+
+- **The graph has malware and actors.** The MITRE ATT&CK connector was registering with an invalid scope, so the platform accepted the connector but silently dropped the bundle. Fixing the scope produced **558 malware objects, 181 intrusion sets and 57 campaigns**; MISP now exposes **136 galaxies / 58,117 clusters / 555 object templates**, and its threat-guessing option is on.
+- **The briefs are bilingual.** Every post carries a Dutch and Papiamento summary. English-only intelligence is a filter on who can use it.
+- **The cadence is automated.** A systemd timer runs the collector every Monday at 07:00 AST and writes a numbered brief draft to `drafts/`. A human still edits it; that is deliberate.
+- **The analyst view exists.** Three OpenCTI dashboards — *Aruba Watchlist*, *KEV Exposure* and *Ingestion Pulse (24h)* — render live counts over the graph, alongside the public radar.
+- **The graph has a snapshot.** Elasticsearch has a filesystem repository and a daily SLM policy; the first snapshot completed with 16/16 shards successful.
+
+Two items are not finished:
+
+- **OTX and AbuseIPDB are wired but need keys.** Both connectors are behind Compose profiles so the stack does not fail without them. The AbuseIPDB connector supports `ABUSEIPDB_ONLY_COUNTRY=AW,CW,BQ`; OTX has no country filter and is context, not a local feed.
+- **The NVMe move is blocked, not done.** The VM disk is 100 GB; the thin pool has ~52 GB free, and the USB-backed disk resets under sustained random I/O. A shrink-and-copy migration would risk the only copy of the graph for a marginal gain. The correct order is a block-level clone to a healthy disk, then a shrink, then the move. The snapshot repository is the safety net until that happens.
+
 ## What's next
 
-- Enable MISP galaxies and object templates so malware and actor context survives the import.
-- Add AlienVault OTX with a recent pulse window, and an AbuseIPDB feed scoped to `AW,CW,BQ` — the only source in the connector catalogue that can be filtered to these countries at the source.
-- Publish Papiamento and Dutch summaries of every brief. English-only intelligence is a filter on who can use it.
-- Keep the weekly cadence, and build the in-platform OpenCTI analyst dashboards (regional watchlist, KEV exposure, feed health).
-- Move the VM to NVMe and add a proper Elasticsearch snapshot repository.
+- Get the OTX and AbuseIPDB keys into `.env`, then `docker compose --profile otx --profile abuseipdb up -d`.
+- Clone the VM disk to healthy storage before attempting the NVMe move; the current disk is the weakest link, not the CPU.
+- Publish the weekly draft every Monday, and keep the analyst dashboards current as the feed mix changes.
 
 If you run an organisation on the island and want to contribute an incident, a phishing sample or a correction, the contact route is on the radar's [about page](https://kevinflorencio.github.io/opencti-aruba/about/#contact). Victim identities are never published, and the source of a report is not disclosed without permission.
