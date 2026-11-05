@@ -1,17 +1,16 @@
 ---
 title: "Building an RTL-SDR Field Guide for Aruba"
-date: 2026-11-05
+date: 2026-11-05 13:30:00 -0400
 categories: [Projects, Radio]
 tags: [SDR, Aruba, RTL-SDR, RF, Projects]
-image:
-  path: /assets/img/aruba-rf-bandplan.png
-  alt: Band plan of Aruba from 24 MHz to 1.7 GHz
 ---
 
 Most software-defined radio guides assume you live in the US or Europe. The hardware
 advice travels; the frequencies, the airport channels, the marine traffic and the legal
 framework do not. Aruba is small enough that nobody had written the local version, so I
 built one.
+
+![Band plan of Aruba from 24 MHz to 1.7 GHz](/assets/img/aruba-rf-bandplan.png)
 
 **The guide is live at
 [thankful-forest-023e9360f.5.azurestaticapps.net](https://thankful-forest-023e9360f.5.azurestaticapps.net/).**
