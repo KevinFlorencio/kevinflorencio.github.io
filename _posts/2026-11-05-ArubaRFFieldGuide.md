@@ -68,7 +68,7 @@ named private vessels or aircraft. The public services are interesting enough.
 ## How the scan pipeline works
 
 <figure class="post-float">
-  <img src="/assets/img/aruba-rf-fm-waterfall.png" alt="Waterfall of the FM broadcast band in Oranjestad: bright vertical lines are station carriers" class="img-fluid rounded">
+  <img src="/assets/img/aruba-rf-fm-waterfall.png" width="1200" height="650" alt="Waterfall of the FM broadcast band in Oranjestad: bright vertical lines are station carriers" class="img-fluid rounded">
   <figcaption>FM band, 87.5–108 MHz: frequency across, sweeps down. Each bright vertical line is a carrier that stayed put.</figcaption>
 </figure>
 
