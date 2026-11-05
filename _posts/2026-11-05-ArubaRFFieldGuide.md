@@ -67,6 +67,11 @@ named private vessels or aircraft. The public services are interesting enough.
 
 ## How the scan pipeline works
 
+<figure style="float:right; width:min(45%,340px); margin:0 0 1rem 1.5rem;">
+  <img src="/assets/img/aruba-rf-fm-waterfall.png" alt="Waterfall of the FM broadcast band in Oranjestad: bright vertical lines are station carriers" class="img-fluid rounded">
+  <figcaption class="text-muted small mt-2">Twelve sweeps of the FM band from Oranjestad. Each bright vertical line is a carrier that did not move.</figcaption>
+</figure>
+
 `rtl_power` writes a matrix of sweeps × frequency bins. The naive approach — median across
 time per bin — fails on a continuous carrier because the carrier becomes the "noise". The
 scanner instead estimates a local floor from a wide slice of neighbouring frequencies on
