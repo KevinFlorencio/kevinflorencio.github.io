@@ -1,0 +1,36 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Figures that sit beside the text on wide screens and stack on phones. */
+.post-float {
+  margin: 0.25rem 0 1rem;
+}
+
+.post-float img {
+  width: 100%;
+  border-radius: 0.375rem;
+}
+
+.post-float figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--text-muted-color);
+}
+
+@media (min-width: 768px) {
+  .post-float {
+    float: right;
+    width: min(45%, 340px);
+    margin: 0.25rem 0 1rem 1.5rem;
+  }
+}
