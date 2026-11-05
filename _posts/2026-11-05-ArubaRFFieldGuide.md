@@ -3,6 +3,9 @@ title: "Building an RTL-SDR Field Guide for Aruba"
 date: 2026-11-05 13:30:00 -0400
 categories: [Projects, Radio]
 tags: [SDR, Aruba, RTL-SDR, RF, Projects]
+image:
+  path: /assets/img/aruba-rf-cover.png
+  alt: FM broadcast spectrum captured in Oranjestad, Aruba
 ---
 
 Most software-defined radio guides assume you live in the US or Europe. The hardware
