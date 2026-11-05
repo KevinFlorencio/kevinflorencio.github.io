@@ -79,7 +79,7 @@ The platform keeps the rest: connector metadata, sensitive reports, internal not
 
 The first version of this post ended with a list. Most of it is now running:
 
-- **The graph has malware and actors.** The MITRE ATT&CK connector was registering with an invalid scope, so the platform accepted the connector but silently dropped the bundle. Fixing the scope produced **558 malware objects, 181 intrusion sets and 57 campaigns**; MISP now exposes **136 galaxies / 58,117 clusters / 555 object templates**, and its threat-guessing option is on.
+- **The graph has malware and actors.** The MITRE ATT&CK connector was registering with an invalid scope, so the platform accepted the connector but silently dropped the bundle. Fixing the scope produced **746 malware objects, 96 tools, 185 intrusion sets and 58 campaigns**; MISP now exposes **136 galaxies / 58,117 clusters / 555 object templates**, and its threat-guessing option is on.
 - **The briefs are bilingual.** Every post carries a Dutch and Papiamento summary. English-only intelligence is a filter on who can use it.
 - **The cadence is automated.** A systemd timer runs the collector every Monday at 07:00 AST and writes a numbered brief draft to `drafts/`. A human still edits it; that is deliberate.
 - **The analyst view exists.** Three OpenCTI dashboards — *Aruba Watchlist*, *KEV Exposure* and *Ingestion Pulse (24h)* — render live counts over the graph, alongside the public radar.
